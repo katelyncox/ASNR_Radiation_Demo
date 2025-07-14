@@ -1,10 +1,10 @@
-# ASNR Radiation Monitoring Demo
+# Radiation Monitoring Demo
 
-This project demonstrates how L'Autorité de sûreté nucléaire et de radioprotection (ASNR) uses Posit tools for environmental radiation monitoring around nuclear facilities.
+This project demonstrates how to ( ) use Posit tools for environmental radiation monitoring around nuclear facilities.
 
 ## Demo Scenario
 
-An ASNR R programmer analyzes environmental radiation sensor data from the Flamanville nuclear facility to:
+An   R programmer analyzes environmental radiation sensor data from the Flamanville nuclear facility to:
 - Detect anomalies in radiation levels
 - Assess regulatory compliance
 - Generate technical reports for experts
@@ -13,7 +13,7 @@ An ASNR R programmer analyzes environmental radiation sensor data from the Flama
 ## Project Structure
 
 ```
-ASNR_Radiation_Demo/
+ _Radiation_Demo/
 ├── data/                           # Sample sensor and weather data
 │   ├── flamanville_sensors_2024.csv
 │   ├── meteorological_2024.csv
@@ -27,7 +27,7 @@ ASNR_Radiation_Demo/
 ├── shiny_app/                      # Public-facing dashboard
 │   └── app.R
 ├── docs/                           # Documentation
-├── ASNR_Radiation_Demo.Rproj      # R Project file
+├──  _Radiation_Demo.Rproj      # R Project file
 ├── renv.lock                       # Package dependencies
 └── README.md
 ```
@@ -72,7 +72,7 @@ ASNR_Radiation_Demo/
 
 ### Installation
 1. Clone or download this project
-2. Open `ASNR_Radiation_Demo.Rproj` in RStudio
+2. Open ` _Radiation_Demo.Rproj` in RStudio
 3. Install dependencies:
    ```r
    renv::restore()
