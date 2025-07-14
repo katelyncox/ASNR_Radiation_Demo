@@ -1,4 +1,4 @@
-# Generate Sample Radiation Sensor Data for ASNR Demo
+# Generate Sample Radiation Sensor Data for Radiation Demo
 # This script creates realistic radiation monitoring data for the demo
 
 library(tidyverse)
@@ -8,7 +8,7 @@ set.seed(42)
 
 # Create sensor locations around Flamanville (approximate coordinates)
 sensor_locations <- tibble(
-  sensor_id = sprintf("ASNR_%03d", 1:15),
+  sensor_id = sprintf("Radiation_%03d", 1:15),
   latitude = runif(15, 49.52, 49.55),
   longitude = runif(15, -1.88, -1.84),
   sensor_type = sample(c("gamma", "beta", "alpha"), 15, replace = TRUE),
@@ -103,8 +103,8 @@ regulatory_thresholds <- tibble(
   threshold_type = c("Public Alert", "Investigation Level", "Background Normal", "Instrument Detection"),
   radiation_level = c(1.0, 0.5, 0.2, 0.05),
   unit = "µSv/h",
-  authority = "ASNR",
-  reference_document = "ASNR-REG-2023-001"
+  authority = "Radiation",
+  reference_document = "Radiation-REG-2023-001"
 )
 
 write_csv(regulatory_thresholds, "data/regulatory_thresholds.csv")

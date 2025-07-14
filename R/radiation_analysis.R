@@ -1,4 +1,4 @@
-# ASNR Radiation Analysis Script
+# Radiation Analysis Script
 # Anomaly Detection and Statistical Analysis for Environmental Monitoring
 
 library(tidyverse)

@@ -1,4 +1,4 @@
-# ASNR Public Radiation Monitoring Dashboard
+# Public Radiation Monitoring Dashboard
 # Interactive web application for public transparency
 
 library(shiny)
@@ -11,7 +11,7 @@ library(tidyverse)
 library(lubridate)
 
 # Source analysis functions
-source("../R/radiation_analysis.R")
+source("R/radiation_analysis.R")
 
 # Load data
 data_list <- load_radiation_data()
@@ -22,7 +22,7 @@ thresholds <- data_list$thresholds
 # UI
 ui <- dashboardPage(
   dashboardHeader(
-    title = "ASNR - Surveillance Radiologique Environnementale",
+    title = "  - Surveillance Radiologique Environnementale",
     titleWidth = 450
   ),
   
@@ -199,7 +199,7 @@ ui <- dashboardPage(
             width = 12,
             div(
               h3("Surveillance Environnementale Radiologique"),
-              p("L'Autorité de sûreté nucléaire et de radioprotection (ASNR) surveille en permanence les niveaux de radiation autour des installations nucléaires françaises pour assurer la protection du public et de l'environnement."),
+              p("L'Autorité de sûreté nucléaire et de radioprotection ( ) surveille en permanence les niveaux de radiation autour des installations nucléaires françaises pour assurer la protection du public et de l'environnement."),
               
               h4("Comprendre les Mesures"),
               tags$ul(
@@ -219,11 +219,11 @@ ui <- dashboardPage(
               ),
               
               h4("Transparence et Accessibilité"),
-              p("Cette interface publique est mise à jour automatiquement et fournit un accès transparent aux données de surveillance environnementale. Toutes les mesures sont validées selon les protocoles ASNR."),
+              p("Cette interface publique est mise à jour automatiquement et fournit un accès transparent aux données de surveillance environnementale. Toutes les mesures sont validées selon les protocoles  ."),
               
               hr(),
               p(em("Dernière mise à jour des données: "), format(max(sensors_data$timestamp), "%d/%m/%Y %H:%M")),
-              p(em("Contact ASNR: surveillance.environnement@asnr.gouv.fr"))
+              p(em("Contact  : surveillance.environnement@ .gouv.fr"))
             )
           )
         )

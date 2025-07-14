@@ -1,7 +1,7 @@
 ---
-title: "ASNR Environmental Radiation Monitoring Report"
+title: "Environmental Radiation Monitoring Report"
 subtitle: "Technical Analysis - Flamanville Nuclear Facility Monitoring Network"
-author: "Marie Dubois, Senior Data Analyst, ASNR"
+author: "Marie Dubois, Senior Data Analyst,  "
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 output:
   html_document:
@@ -55,7 +55,7 @@ locations <- data_list$locations
 
 # Executive Summary
 
-This report presents a comprehensive analysis of environmental radiation monitoring data collected from the ASNR sensor network around the Flamanville nuclear facility for the period `r params$analysis_period`. The analysis includes anomaly detection, regulatory compliance assessment, and correlation with meteorological conditions.
+This report presents a comprehensive analysis of environmental radiation monitoring data collected from the   sensor network around the Flamanville nuclear facility for the period `r params$analysis_period`. The analysis includes anomaly detection, regulatory compliance assessment, and correlation with meteorological conditions.
 
 ## Key Findings
 
@@ -84,7 +84,7 @@ cat("• **Total Anomalies Detected:** ", anomaly_report$total_anomalies, "\n")
 locations %>%
   select(-installation_date) %>%
   kable(
-    caption = "ASNR Sensor Network Configuration",
+    caption = "  Sensor Network Configuration",
     col.names = c("Sensor ID", "Latitude", "Longitude", "Type", "Status")
   ) %>%
   kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
@@ -125,7 +125,7 @@ print(ts_plot)
 ```{r regulatory-thresholds, echo=FALSE}
 thresholds %>%
   kable(
-    caption = "ASNR Regulatory Thresholds",
+    caption = "  Regulatory Thresholds",
     col.names = c("Threshold Type", "Level (µSv/h)", "Unit", "Authority", "Reference")
   ) %>%
   kable_styling(bootstrap_options = c("striped", "hover"))
@@ -284,7 +284,7 @@ if (anomaly_report$total_anomalies > 0) {
 
 **Report Generated:** `r Sys.time()`  
 **Data Period:** `r min(sensors_data$timestamp)` to `r max(sensors_data$timestamp)`  
-**ASNR Reference:** TECH-2024-001  
+**  Reference:** TECH-2024-001  
 **Classification:** Internal Technical Report
 
-*This report is generated automatically from validated sensor data and statistical analysis. For questions regarding methodology or findings, contact the ASNR Data Science Team.*
+*This report is generated automatically from validated sensor data and statistical analysis. For questions regarding methodology or findings, contact the Data Science Team.*

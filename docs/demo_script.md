@@ -1,9 +1,9 @@
-# ASNR Demo Script
+# Radiation Demo Script
 
 ## Demo Setup (5 minutes before presentation)
 
 1. Open Posit Workbench
-2. Load the ASNR_Radiation_Demo project
+2. Load the Radiation_Demo project
 3. Ensure all data files are generated
 4. Have both technical report and Shiny app ready to demonstrate
 
@@ -11,7 +11,7 @@
 
 ### Act 1: The Challenge (2 minutes)
 
-**Narrator**: "Marie Dubois, Senior Data Analyst at ASNR, receives an urgent request. Citizens near Flamanville nuclear facility have reported concerns about potential radiation increases. ASNR needs to provide both rapid technical assessment and transparent public communication."
+**Narrator**: "Marie Dubois, Senior Data Analyst at Radiation, receives an urgent request. Citizens near Flamanville nuclear facility have reported concerns about potential radiation increases. Radiation needs to provide both rapid technical assessment and transparent public communication."
 
 **Show**: Email or notification about public concern
 
@@ -30,13 +30,13 @@
 
 **Narration Points**:
 - "Marie works in a secure, enterprise environment"
-- "All packages come from ASNR's validated repository"
+- "All packages come from Radiation's validated repository"
 - "Every analysis is version-controlled and auditable"
 - "Collaboration happens seamlessly with colleagues"
 
 **Show**:
 ```r
-# Load validated packages from ASNR's package manager
+# Load validated packages from Radiation's package manager
 library(tidyverse)
 library(forecast)
 library(leaflet)
@@ -82,7 +82,7 @@ create_sensor_map(sensors_data)
 3. Render to HTML/PDF
 
 **Narration**:
-- "For ASNR experts: comprehensive 15-page technical analysis"
+- "For Radiation experts: comprehensive 15-page technical analysis"
 - "All R code included for complete reproducibility"
 - "Statistical methodologies and regulatory compliance detailed"
 

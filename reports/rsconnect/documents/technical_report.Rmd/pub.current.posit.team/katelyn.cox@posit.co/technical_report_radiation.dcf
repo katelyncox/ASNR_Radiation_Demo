@@ -1,0 +1,12 @@
+name: technical_report_radiation
+title: technical_report_radiation
+username: katelyn.cox@posit.co
+account: katelyn.cox@posit.co
+server: pub.current.posit.team
+hostUrl: https://pub.current.posit.team/__api__
+appId: 1388
+bundleId: 6157
+url: https://pub.current.posit.team/content/246de9f4-cf69-43ee-a32b-9d9f01e228fd/
+version: 1
+asMultiple: FALSE
+asStatic: TRUE

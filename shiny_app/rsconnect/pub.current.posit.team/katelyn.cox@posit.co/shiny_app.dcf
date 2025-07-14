@@ -1,0 +1,12 @@
+name: shiny_app
+title: shiny_app
+username: katelyn.cox@posit.co
+account: katelyn.cox@posit.co
+server: pub.current.posit.team
+hostUrl: https://pub.current.posit.team/__api__
+appId: 1389
+bundleId: 6162
+url: https://pub.current.posit.team/content/9f5ff8cd-cff1-4e28-ae65-6945b7fcc613/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
