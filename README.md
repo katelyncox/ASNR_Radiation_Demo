@@ -13,7 +13,7 @@ An   R programmer analyzes environmental radiation sensor data from the Flamanvi
 ## Project Structure
 
 ```
- _Radiation_Demo/
+ Radiation_Demo/
 ├── data/                           # Sample sensor and weather data
 │   ├── flamanville_sensors_2024.csv
 │   ├── meteorological_2024.csv
@@ -50,13 +50,13 @@ An   R programmer analyzes environmental radiation sensor data from the Flamanvi
 - Weather correlation analysis
 - Spatial mapping capabilities
 
-### 3. Technical Report (`reports/technical_report.Rmd`)
+### 3. Technical Report (`reports_radiation/technical_report.Rmd`)
 - Comprehensive R Markdown report for internal use
 - Statistical analysis and visualizations
 - Anomaly detection results
 - Regulatory compliance assessment
 
-### 4. Public Dashboard (`shiny_app/app.R`)
+### 4. Public Dashboard (`shiny_radiation/app.R`)
 - Interactive Shiny application in French
 - Real-time radiation level monitoring
 - Spatial sensor network map
@@ -77,7 +77,7 @@ An   R programmer analyzes environmental radiation sensor data from the Flamanvi
 
 ### Installation
 1. Clone or download this project
-2. Open ` _Radiation_Demo.Rproj` in RStudio
+2. Open ` Radiation_Demo.Rproj` in RStudio
 3. Install dependencies:
    ```r
    renv::restore()
@@ -101,7 +101,7 @@ rmarkdown::render("reports/technical_report.Rmd")
 
 ### Launch Public Dashboard
 ```r
-shiny::runApp("shiny_app")
+shiny::runApp("shiny_radiation")
 ```
 
 ## Demo Narrative Points
