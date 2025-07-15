@@ -22,12 +22,17 @@ An   R programmer analyzes environmental radiation sensor data from the Flamanvi
 ├── R/                              # Analysis scripts and functions
 │   ├── generate_sample_data.R
 │   └── radiation_analysis.R
-├── reports/                        # R Markdown technical reports
+├── reports_radiation/                        # R Markdown technical reports
 │   └── technical_report.Rmd
-├── shiny_app/                      # Public-facing dashboard
+├── shiny_radiation/                      # Public-facing dashboard
+│   ├── data
+│   ├── R
+│   ├── renv.lock
+│   ├── renv
+│   ├── shiny_radiation.Rproj
 │   └── app.R
 ├── docs/                           # Documentation
-├──  _Radiation_Demo.Rproj      # R Project file
+├──  Radiation_Demo.Rproj      # R Project file
 ├── renv.lock                       # Package dependencies
 └── README.md
 ```
