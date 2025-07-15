@@ -1,6 +1,6 @@
 # Radiation Monitoring Demo
 
-This project demonstrates how to ( ) use Posit tools for environmental radiation monitoring around nuclear facilities.
+This project demonstrates how to use Posit Professional tools for environmental radiation monitoring around nuclear facilities.
 
 ## Demo Scenario
 
