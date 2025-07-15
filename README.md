@@ -79,9 +79,9 @@ An   R programmer analyzes environmental radiation sensor data from the Flamanvi
 1. Clone or download this project
 2. Open ` Radiation_Demo.Rproj` in RStudio
 3. Install dependencies:
-   ```r
-   renv::restore()
-   ```
+```r
+ renv::restore()
+```
 
 ### Generate Sample Data
 ```r
@@ -96,7 +96,7 @@ data_list <- load_radiation_data()
 
 ### Generate Technical Report
 ```r
-rmarkdown::render("reports/technical_report.Rmd")
+rmarkdown::render("reports_rasiation/technical_report.Rmd")
 ```
 
 ### Launch Public Dashboard
